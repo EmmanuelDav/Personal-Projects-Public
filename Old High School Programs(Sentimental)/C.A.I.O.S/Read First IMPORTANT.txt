@@ -1,0 +1,7 @@
+**READ FIRST****
+
+
+This is what i call caios , command automated input output system ,  basically it is a voice command system 
+when you say a word or phrase , it will check to see if it matches any of the known commands 
+each commands have its own functionallity known by 'Caios'. Enjoy 
+P.S: Users Have to modify the paths seeing as though this is a personal voice command assistant its optimized for me

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222121"
+    tools:context=".Home">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Timeline"
+        android:layout_width="396dp"
+        android:layout_height="478dp"
+        android:layout_marginTop="88dp"
+        android:background="#454343"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ContactsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="16dp"
+        android:background="#222121"
+        android:src="@drawable/ic_baseline_contacts_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Timeline"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <ImageButton
+        android:id="@+id/PostStoryButton"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SettingsButton"
+        app:layout_constraintStart_toEndOf="@+id/ContactsButton"
+        app:layout_constraintTop_toBottomOf="@+id/Timeline"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat = "@drawable/ic_baseline_post_add_24" />
+
+    <ImageButton
+        android:id="@+id/SettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="16dp"
+        android:background="#222121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/PostStoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/Timeline"
+        app:layout_constraintVertical_bias="0.482"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    <ImageButton
+        android:id="@+id/HelpButton"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#222121"
+        app:layout_constraintBottom_toTopOf="@+id/Timeline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_help_outline_24" />
+
+    <ImageButton
+        android:id="@+id/ViewProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="#222121"
+        app:layout_constraintBottom_toTopOf="@+id/Timeline"
+        app:layout_constraintStart_toEndOf="@+id/HelpButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/blmImage"
+        android:layout_width="109dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/Timeline"
+        app:layout_constraintStart_toEndOf="@+id/ViewProfileButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/blackfistjoint" />
+
+    <ImageButton
+        android:id="@+id/ViewStoriesButton"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="#222121"
+        app:layout_constraintBottom_toTopOf="@+id/Timeline"
+        app:layout_constraintEnd_toStartOf="@+id/tothetopbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903"
+        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
+
+    <ImageButton
+        android:id="@+id/tothetopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#222121"
+        app:layout_constraintBottom_toTopOf="@+id/Timeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971"
+        app:srcCompat="@drawable/ic_baseline_arrow_upward_24" />
+
+    <TextView
+        android:id="@+id/connectionerrormessage"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:alpha="0"
+        android:text="Connection Issue! Please Refresh the Timeline"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/Timeline"
+        app:layout_constraintEnd_toEndOf="@+id/Timeline"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/Timeline"
+        app:layout_constraintTop_toTopOf="@+id/Timeline"
+        app:layout_constraintVertical_bias="0.505" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

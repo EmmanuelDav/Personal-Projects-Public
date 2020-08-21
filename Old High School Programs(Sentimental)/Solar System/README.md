@@ -1,0 +1,1 @@
+This is a old program I created for my school for the children below my grade levels(since the grades k-12 attended my school).This program could be significantly reduced in size by using polymorphism.One function could cut this program in half but I will not bother it.

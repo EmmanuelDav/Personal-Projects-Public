@@ -1,0 +1,3 @@
+This is an old old old script I wrote for my highschool , There are many ways to shorten this project , 
+one of the reasons I choose to leave it alone and not make any changes is because , I always want that reminder
+as to where I have come from as a programmer using procedural code and not short and clean OOP.

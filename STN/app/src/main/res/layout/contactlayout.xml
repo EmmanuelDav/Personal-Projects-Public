@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="#ffffff"
+    app:cardElevation="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#171212"
+        android:padding="3dp"
+        android:layout_height="133dp">
+
+
+        <ImageView
+            android:id="@+id/ContactImage"
+            android:layout_width="148dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666"
+            app:srcCompat="@drawable/bestusericon"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/EmailTextview"
+            android:layout_width="56dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="157dp"
+            android:text="Email:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/RemoveContact"
+            app:layout_constraintStart_toEndOf="@+id/ContactImage"
+            app:layout_constraintTop_toBottomOf="@+id/Linktopost" />
+
+        <TextView
+            android:id="@+id/Phonenumbertextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Phone Number:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/RemoveContact"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ContactImage"
+            app:layout_constraintTop_toBottomOf="@+id/EmailTextview" />
+
+        <TextView
+            android:id="@+id/NameOfContactee"
+            android:layout_width="95dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="4dp"
+            android:text="Victim Name:"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/RemoveContact"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ContactImage"
+            app:layout_constraintTop_toBottomOf="@+id/Phonenumbertextview" />
+
+        <TextView
+            android:id="@+id/Relationship"
+            android:layout_width="153dp"
+            android:layout_height="31dp"
+            android:text="Relationship To Victim:"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/RemoveContact"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ContactImage"
+            app:layout_constraintTop_toBottomOf="@+id/NameOfContactee"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/Linktopost"
+            android:layout_width="257dp"
+            android:layout_height="36dp"
+            android:text="What Post Did I Save This Information From?"
+            android:textColor="#0455A8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ContactImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/RemoveContact"
+            android:layout_width="46dp"
+            android:layout_height="51dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24"
+            tools:layout_editor_absoluteX="362dp"
+            tools:layout_editor_absoluteY="34dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

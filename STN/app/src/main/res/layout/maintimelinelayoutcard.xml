@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools2="http://schemas.android.com/tools"
+    app:cardElevation="50dp"
+    app:cardBackgroundColor="#171313"
+    xmlns:tools="http://.android.com/tools"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="613dp"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/MagnifiedProfileImage"
+            android:layout_width="409dp"
+            android:layout_height="478dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.522"
+            app:srcCompat="@drawable/bestusericon" />
+
+        <ImageView
+            android:id="@+id/VictimImage"
+            android:layout_width="370dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testimony"
+            app:srcCompat="@drawable/ic_baseline_image_24" />
+
+        <ImageButton
+            android:id="@+id/LikeButton"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="116dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VictimImage"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+        <TextView
+            android:id="@+id/imageloadtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image Loading..."
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/VictimImage"
+            app:layout_constraintEnd_toEndOf="@+id/VictimImage"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/VictimImage"
+            app:layout_constraintTop_toTopOf="@+id/VictimImage"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/Likes"
+            android:layout_width="63dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="3dp"
+
+            android:text="Loading Likes..."
+            android:textColor="#3F51B5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/LikeButton"
+            app:layout_constraintStart_toStartOf="@+id/LikeButton"
+            app:layout_constraintTop_toBottomOf="@+id/LikeButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/PostersProfile"
+            android:layout_width="73dp"
+            android:layout_height="63dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/testimony"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@drawable/bestusericon"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="233dp"
+
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Loading..."
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toEndOf="@+id/PostersProfile"
+            app:layout_constraintTop_toBottomOf="@+id/ViewFullStory" />
+
+        <TextView
+            android:id="@+id/Location"
+            android:layout_width="269dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="4dp"
+            android:text="Loading..."
+            android:textColor="#4E4646"
+            app:layout_constraintStart_toEndOf="@+id/LocationImage"
+            app:layout_constraintTop_toBottomOf="@+id/user" />
+
+        <ImageView
+            android:id="@+id/LocationImage"
+            android:layout_width="28dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/PostersProfile"
+            app:layout_constraintTop_toBottomOf="@+id/user"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/testimony"
+            android:scrollbars="vertical"
+            android:layout_width="370dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="8dp"
+            android:background="#CAC4C4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Loading...."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Location" />
+
+        <Button
+            android:id="@+id/contactdownload"
+            android:layout_width="49dp"
+            android:layout_height="51dp"
+
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_baseline_contact_mail_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/reportbutton"
+            app:layout_constraintTop_toBottomOf="@+id/VictimImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/reportbutton"
+            android:layout_width="60dp"
+            android:layout_height="49dp"
+            android:layout_marginEnd="104dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VictimImage"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_baseline_report_24" />
+
+        <TextView
+            android:id="@+id/likesofperson"
+            android:layout_width="62dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:text="TextView"
+            android:alpha="0"
+            android:textColor="#3F51B5"
+            app:layout_constraintBottom_toBottomOf="@+id/MagnifiedProfileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Likedisplayimage"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <ImageView
+            android:id="@+id/Likedisplayimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:alpha="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VictimImage"
+            app:srcCompat="@drawable/ic_baseline_thumb_up_24" />
+
+        <ImageView
+            android:id="@+id/Memberstatus"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="@+id/MagnifiedProfileImage"
+            app:layout_constraintHorizontal_bias="0.244"
+            app:layout_constraintStart_toEndOf="@+id/Likedisplayimage"
+            app:layout_constraintTop_toBottomOf="@+id/VictimImage"
+            app:srcCompat="@drawable/ic_baseline_flight_takeoff_24" />
+
+        <TextView
+            android:id="@+id/Memberstatustext"
+            android:layout_width="60dp"
+            android:layout_height="17dp"
+            android:text="TextView"
+            android:alpha="0"
+            android:textColor="#FFAC00"
+            app:layout_constraintBottom_toBottomOf="@+id/MagnifiedProfileImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/likesofperson"
+            app:layout_constraintTop_toBottomOf="@+id/Memberstatus"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/BacktoPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/MagnifiedProfileImage"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/ViewFullStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:alpha="0"
+            android:text="Click Here To View Full Story"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

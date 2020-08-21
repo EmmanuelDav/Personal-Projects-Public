@@ -1,0 +1,1 @@
+This was a program I developed for my parents back in my 10th grade of highschool to stop them from using the old pen and paper for the tracking of bills.I was 16 at this time.
